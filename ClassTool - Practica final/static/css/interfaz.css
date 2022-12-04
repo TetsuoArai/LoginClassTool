@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 30;
+  background: #181818;
+  color: #fff;
+  overflow: hidden;
+}
+
+h1 ,h2 ,h3 ,h4 ,h5 ,h6 {
+  font-weight: 30;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#LadoIzquierdo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#LadoDerecho {
+  flex: 1;
+}
+
+/* Sign In */
+#signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 1rem;
+  position: relative;
+  bottom: 30px;
+}
+
+#signin form {
+  width: 80%;
+  padding-bottom: 3rem;
+  position: relative;
+  bottom: 25px;
+}
+
+#signin .logo h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  position: relative;
+  left: 80px;
+  bottom: 55px;
+}
+
+#signin .logo img {
+  width: 140px;
+  position: relative;
+  top: 50px;
+  right: 80px;
+}
+
+#signin label {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+#signin .text-input {
+  margin-bottom: 1.3rem;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid rgb(100, 200, 224);
+  background: transparent;
+  border-bottom:1px solid rgb(100, 200, 224);
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  line-height: 20px;
+  
+}
+
+#signin .btn-primario{
+  width: 100%;
+}
+#signin .btn-secundario, .or, .links {
+  width: 60%;
+}
+
+
+/* Showcase */
+#portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://fondosmil.com/fondo/36779.jpg') no-repeat center center / cover;
+  height: 100vh;
+  text-align: center;
+}
+
+#portada .portada-texto {
+  font-size: 3rem;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+#portada .btn-secundario {
+  width: 60%;
+  margin: auto;
+}
+
+/* Button */
+.btn-primario {
+  padding: 10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  background: rgb(100, 200, 224);
+  border: rgb(100, 200, 224);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.btn-primario:hover {
+  background-color: rgb(23, 84, 99);
+}
+
+.btn-secundario {
+  padding: 0.7rem 1rem;
+  height: 2.7rem;
+  display: block;
+  border: 1px solid #f4f4f4;
+  border-radius: 2px;
+  font-weight: 500;
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+  position: relative;
+  bottom: 30px;
+}
+
+.btn-secundario:hover {
+  border-color: rgb(23, 84, 99);
+  color: rgb(23, 84, 99);
+}
+h1{
+  color: #f4f4f4;
+  font-size: 70px;
+}
+p{
+  color: #fff;
+  font-size: 18px;
+  line-height: 15px;
+}
+/* Media Queries */
+@media (min-width: 1200px) {
+  #LadoIzquierdo {
+    flex: 4;
+  }
+  #LadoDerecho {
+    flex: 6;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+  #LadoIzquierdo {
+    justify-content: start;
+    margin-top: 4vh;
+  }
+  #LadoDerecho {
+    display: none;
+  }
+  #signin .logo {
+    margin-bottom: 2vh;
+  }
+  #signin .text-input {
+    margin-bottom: 0.7rem;
+  }
+}
